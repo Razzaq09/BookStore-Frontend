@@ -27,7 +27,7 @@ const OrderPage = () => {
     if (isError) return <div>Error getting orders data</div>
 
     return (
-        <div className='container mx-auto p-8 min-h-screen bg-gray-50'>
+        <div className='container mx-auto p-8 min-h-screen bg-gray-50 text-left'>
             {notification.message && (
                 <div className={`mb-4 p-4 rounded-lg ${notification.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                     {notification.message}
